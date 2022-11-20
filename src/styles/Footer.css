@@ -1,0 +1,32 @@
+.footer-container {
+  background-color: black;
+
+  height: 210px;
+  min-height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-container img {
+  margin-top: 66px;
+  filter: brightness(10);
+  width: 122px;
+  height: 40px;
+}
+
+.footer-container span {
+  color: white;
+  font-family: 'Montserrat';
+  font-size: 24px;
+  font-weight: 500;
+
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+  .footer-container span {
+    font-size: 12px;
+  }
+}

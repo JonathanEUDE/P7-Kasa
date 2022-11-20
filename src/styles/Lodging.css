@@ -1,0 +1,136 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'),
+    url('./fonts/Montserrat-VariableFont_wght.ttf') format('truetype'),
+    url('./fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+}
+
+.lodging-container {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+
+  padding: 100px;
+  padding-top: 20px;
+
+  font-family: 'Montserrat';
+  color: #ff6060;
+}
+
+.lodging-informations-container {
+  margin-top: 30px;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.lodging-title-location-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.lodging-title {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.lodging-location {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.lodging-tags-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  margin-top: 20px;
+}
+
+.lodging-tags-container div {
+  margin-right: 10px;
+}
+
+.lodging-details-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-top: 25px;
+}
+
+.lodging-details-container > div {
+  width: 45%;
+}
+
+.lodging-host {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  width: 100%;
+  font-family: 'Montserrat';
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.lodging-host span {
+  width: min-content;
+  margin-right: 10px;
+}
+
+.lodging-host img {
+  width: 64px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.lodging-host-score-container {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .lodging-container {
+    padding: 20px;
+  }
+
+  .lodging-details-container {
+    flex-direction: column;
+  }
+
+  .lodging-details-container > div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .lodging-title {
+    font-size: 18px;
+  }
+
+  .lodging-location {
+    font-size: 14px;
+  }
+
+  .lodging-informations-container {
+    flex-direction: column;
+  }
+
+  .lodging-host-score-container {
+    flex-direction: row-reverse;
+  }
+
+  .lodging-tags-container div {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .lodging-host {
+    font-size: 12px;
+  }
+  .lodging-host img {
+    width: 32px;
+  }
+}

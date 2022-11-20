@@ -1,0 +1,22 @@
+.tag-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #ff6060;
+  height: 25px;
+  padding: 0px 30px;
+  border-radius: 10px;
+  color: white;
+
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+  .tag-container {
+    font-size: 10px;
+  }
+}

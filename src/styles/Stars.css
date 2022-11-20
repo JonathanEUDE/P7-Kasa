@@ -1,0 +1,33 @@
+.score {
+  font-size: 30px;
+  color: #e3e3e3;
+  margin-top: 4px;
+}
+
+.star-1 svg:nth-child(-n + 1) {
+  color: #ff6060;
+}
+
+.star-2 svg:nth-child(-n + 2) {
+  color: #ff6060;
+}
+
+.star-3 svg:nth-child(-n + 3) {
+  color: #ff6060;
+}
+
+.star-4 svg:nth-child(-n + 4) {
+  color: #ff6060;
+}
+
+.star-5 svg:nth-child(-n + 5) {
+  color: #ff6060;
+}
+
+@media (max-width: 1024px) {
+  .score {
+    font-size: 15px;
+    width: 100%;
+    margin: auto 0;
+  }
+}
