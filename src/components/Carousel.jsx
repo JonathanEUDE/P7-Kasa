@@ -6,16 +6,15 @@ import { Fragment, useEffect, useRef, useState } from 'react';
 
 function Carousel({ images }) {
   const [currentImage, setCurrentImage] = useState(0);
-
-  const moreThenOneImage = images && images.length > 1;
+  const [hasMoreThanOneImage, setHasMoreThanOneImage] = useState(false);
 
   useEffect(() => {
     movePicture();
+    setHasMoreThanOneImage(images && images.length > 1);
   }, [currentImage, images]);
 
   const movePicture = () => {
     let x = document.getElementsByClassName('carousel-img');
-    console.log(x, currentImage);
     if (x && x.length > 0) {
       for (let i = 0; i < images.length; i++) {
         x[i].classList.remove('active');
@@ -47,7 +46,7 @@ function Carousel({ images }) {
             ></img>
           ))}
       </div>
-      {moreThenOneImage ? (
+      {hasMoreThanOneImage ? (
         <Fragment>
           <FontAwesomeIcon
             onClick={leftPicture}

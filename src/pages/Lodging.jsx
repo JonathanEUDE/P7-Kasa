@@ -25,8 +25,7 @@ function Lodging() {
     fetchData();
   }, [id]);
 
-  /*const { title, location, rating, host, equipments, description, pictures } =
-    lodging || {};*/
+  const equipments = lodging.equipments && lodging.equipments.join('\n');
 
   return (
     <div>
@@ -63,11 +62,7 @@ function Lodging() {
               text={lodging.description}
               type="low"
             />
-            <Dropdown
-              title="Equipements"
-              text={lodging.equipments && lodging.equipments.join('\n')}
-              type="low"
-            />
+            <Dropdown title="Equipements" text={equipments} type="low" />
           </div>
         </div>
       ) : (

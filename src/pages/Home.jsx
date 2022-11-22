@@ -5,7 +5,6 @@ import Card from '../components/Card';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import NotFound from '../pages/NotFound';
-import Lodging from './Lodging';
 
 function Home() {
   const [lodgings, setLodging] = useState([]);
@@ -21,7 +20,6 @@ function Home() {
     fetchData();
   }, []);
 
-  console.log(lodgings);
   return (
     <div className="home-container">
       <Slogan />
