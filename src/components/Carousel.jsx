@@ -2,7 +2,7 @@ import '../styles/Carousel.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
-import { Fragment, useEffect, useRef, useState } from 'react';
+import { Fragment, useEffect, useState } from 'react';
 
 function Carousel({ images }) {
   const [currentImage, setCurrentImage] = useState(0);
