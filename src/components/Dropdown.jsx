@@ -11,7 +11,7 @@ function Dropdown({ title, text, type }) {
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const openState = () => {
+  const toggleState = () => {
     setIsOpen(!isOpen);
   };
 
@@ -20,7 +20,7 @@ function Dropdown({ title, text, type }) {
       <span className={`dropdown-title ${fontSize}`}>
         {title}
         <FontAwesomeIcon
-          onClick={openState}
+          onClick={toggleState}
           icon={faAngleDown}
           className={`dropdown-updown ${isOpen ? 'animated' : ''}`}
         />

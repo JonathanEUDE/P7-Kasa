@@ -25,7 +25,8 @@ function Lodging() {
     fetchData();
   }, [id]);
 
-  const equipments = lodging.equipments && lodging.equipments.join('\n');
+  const equipments =
+    lodging && lodging.equipments && lodging.equipments.join('\n');
 
   return (
     <div>
